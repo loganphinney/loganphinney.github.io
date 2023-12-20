@@ -16,6 +16,9 @@ header nav {
 footer{
     text-align: center;
 }
+section{
+    display: none;
+}
 a:link, a:visited, a:active {
     text-decoration: none;
     color: #C3B1E1;
