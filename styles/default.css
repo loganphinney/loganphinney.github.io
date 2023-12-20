@@ -6,17 +6,23 @@
 body {
     color: #050505;
     background-color: #f5f5f5;
-    border: 2px solid #050505;
 }
 
-/*header nav {
+header nav {
     display: flex;
     justify-content: space-evenly;
-}*/
+}
 
+footer{
+    text-align: center;
+}
+
+header, footer {
+ border: 1px solid black;
+}
 a:link, a:visited, a:active {
     text-decoration: none;
-    color: #050505;
+    color: #C3B1E1;
 }
 
 a:hover {
