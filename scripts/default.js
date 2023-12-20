@@ -11,16 +11,16 @@ $(document).ready(function () {
     //NAV LINK ONCLICK FUNCTIONS
     $("#homeLink").on("click", () => {
         $('section').hide();
-        $homeSection.show("slide", { easing: "linear", direction: "left"});
+        $homeSection.show("fold", {duration: 800});
     });
 
     $("#resumeLink").on("click", () => {
         $('section').hide();
-        $resumeSection.show("slide", { easing: "linear", direction: "left"});
+        $resumeSection.show("fold", {duration: 800});
     });
 
     $("#testLink").on("click", () => {
         $('section').hide();
-        $testSection.show("slide", { easing: "linear", direction: "left"});
+        $testSection.show("fold", {duration: 800});
     });
 });
