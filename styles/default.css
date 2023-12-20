@@ -1,6 +1,25 @@
-*:root{
+*, :root {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
+
 body {
+    color: #050505;
     background-color: #f5f5f5;
+    border: 2px solid #050505;
+}
+
+/*header nav {
+    display: flex;
+    justify-content: space-evenly;
+}*/
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #050505;
+}
+
+a:hover {
+    color: #419D78;
+    font-weight: 1000;
 }
