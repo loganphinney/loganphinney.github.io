@@ -11,16 +11,16 @@ $(document).ready(function () {
     //NAV LINK ONCLICK FUNCTIONS
     $("#homeLink").on("click", () => {
         $('section').hide();
-        $homeSection.show("fold", { speed: "fast" });
+        $homeSection.show("fold");
     });
 
     $("#resumeLink").on("click", () => {
         $('section').hide();
-        $resumeSection.show("fold", { speed: "fast" });
+        $resumeSection.show("fold");
     });
 
     $("#testLink").on("click", () => {
         $('section').hide();
-        $testSection.show("fold", { speed: "fast" });
+        $testSection.show("fold");
     });
 });

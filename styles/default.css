@@ -1,5 +1,5 @@
 *, :root {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -19,16 +19,15 @@ footer {
     text-align: center;
 }
 
-header, footer {
-    border: 1px solid black;
-    border-radius: 10px;
-}
-a:link, a:visited, a:active {
+a:link, a:visited {
     text-decoration: none;
-    color: #C3B1E1;
+    color: #CF9FFF;
 }
 
 a:hover {
+    font-weight: 1000;    
+}
+
+a:active {
     color: #419D78;
-    font-weight: 1000;
 }
