@@ -2,8 +2,8 @@
 $(document).ready(function () {
     //SET INITIAL SECTION VISIBILITY
     const $homeSection = $("#home");
-    const $resumeSection = $("#resume");
     const $testSection = $("#test-section");
+    const $resumeSection = $("#resume");
 
     $('section').hide();
     $homeSection.show();
@@ -14,13 +14,13 @@ $(document).ready(function () {
         $homeSection.show("fold");
     });
 
-    $("#resumeLink").on("click", () => {
-        $('section').hide();
-        $resumeSection.show("fold");
-    });
-
     $("#testLink").on("click", () => {
         $('section').hide();
         $testSection.show("fold");
+    });
+
+    $("#resumeLink").on("click", () => {
+        $('section').hide();
+        $resumeSection.show("fold");
     });
 });
