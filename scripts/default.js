@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     $('section').hide();
     $homeSection.show();
-
+    
     //NAV LINK ONCLICK FUNCTIONS
     $("#homeLink").on("click", () => {
         $('section').hide();
