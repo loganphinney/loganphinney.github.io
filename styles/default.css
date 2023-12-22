@@ -4,19 +4,22 @@
 }
 
 body {
-    color: #050505;
     background-color: #F5F5F5;
+    color: #141414;
+    padding: 24px;
 }
 
 header nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: x-large;
     font-weight: 800;
 }
 
 footer {
     text-align: center;
+    width: min-content;
+    margin: auto;
 }
 
 a:link, a:visited {
@@ -30,4 +33,19 @@ a:hover {
 
 a:active {
     color: #419D78;
+}
+
+.colorFrame {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid #141414;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 6px;
 }

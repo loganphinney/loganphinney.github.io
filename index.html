@@ -6,6 +6,9 @@
     <title>Logan Phinney's Website</title>
     <link rel="stylesheet" href="./styles/default.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
 </head>
@@ -16,11 +19,9 @@
             <a href="#home" id="homeLink">Home</a>
             <a href="#test-section" id="testLink">Test</a>
             <a href="#resume" id="resumeLink">R&eacute;sum&eacute;</a>
+            <a href="#hex-color-generator" id="colorsLink">Color Generator</a>
         </nav>
     </header>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <main>
         <section id="home">
             <h2>Home</h2>
@@ -39,11 +40,30 @@
             <p>This sentence is to test the function of the website. It is not actual content so please ignore it if you are a user.</p>
             <img src="" alt="This is meant to be a PDF of my r&eacute;sum&eacute;.">
         </section>
+        <section id="hex-color-generator">
+            <h2>Color Generator</h2>
+            <button type="button" onclick="changeColor1()">New Color</button>
+            <p id="colorLabel1"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame1"></div>
+            <button type="button" onclick="changeColor2()">New Color</button>
+            <p id="colorLabel2"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame2"></div>
+            <button type="button" onclick="changeColor3()">New Color</button>
+            <p id="colorLabel3"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame3"></div>
+            <button type="button" onclick="changeColor4()">New Color</button>
+            <p id="colorLabel4"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame4"></div>
+            <button type="button" onclick="changeColor5()">New Color</button>
+            <p id="colorLabel5"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame5"></div>
+            <button type="button" onclick="changeColor6()">New Color</button>
+            <p id="colorLabel6"style="display: inline;"></p>
+            <div class="colorFrame" id="colorFrame6"></div>
+        </section>
     </main>
     <footer>
-        <p>Contact<br>
-        (919) 607-7898<br>
-        logan.phinney10@gmail.com</p>
+        <p>Contact<br>(919) 607-7898<br>logan.phinney10@gmail.com</p>
         <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!"></a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="ValidCSS!"></a>
     </footer>
