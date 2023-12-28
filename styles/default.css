@@ -18,8 +18,6 @@ header nav {
 
 footer {
     text-align: center;
-    width: min-content;
-    margin: auto;
 }
 
 a:link, a:visited {
@@ -46,12 +44,13 @@ a:active {
 }
 
 header hr {
-    border: 1px solid #CF9FFF;
+    border: 0.01em solid #CF9FFF;
 }
 
 footer hr {
-    border: 1px solid #141414;
+    border: 0.01em solid #141414;
 }
+
 button {
     width: 120px;
     height: 30px;
