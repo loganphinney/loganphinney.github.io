@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #F5F5F5;
-    color: #141414;
+    background-color: #000;
+    color: #F5F5F5;
     padding: 24px;
 }
 
@@ -18,6 +18,13 @@ header nav {
 }
 
 footer {
+    text-align: center;
+}
+
+img{
+    border: 1px solid #151515;
+}
+figure {
     text-align: center;
 }
 
@@ -38,18 +45,18 @@ a:active {
     height: 150px;
     width: 100%;
     margin-bottom: 12px;
-    border: 1px solid #141414;
+    border: 1px solid #333333;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-header hr {
-    border: 0.01em solid #CF9FFF;
+.portrait {
+    max-height: 95vh;
 }
 
-footer hr {
-    border: 0.01em solid #141414;
+hr {
+    border: 0.01em solid #505050;
 }
 
 button {
