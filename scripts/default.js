@@ -2,8 +2,8 @@
 $(document).ready(function () {
     //SET INITIAL SECTION VISIBILITY
     const $homeSection = $("#home");
-    const $testSection = $("#test-section");
-    const $resumeSection = $("#resume");
+    const $resumeSection = $("#resume");    
+    const $imagesSection = $("#images-section");
     const $colorsSection = $("#hex-color-generator");
 
     $('section').hide();
@@ -15,14 +15,14 @@ $(document).ready(function () {
         $homeSection.show("fold");
     });
 
-    $("#testLink").on("click", () => {
-        $('section').hide();
-        $testSection.show("fold");
-    });
-
     $("#resumeLink").on("click", () => {
         $('section').hide();
         $resumeSection.show("fold");
+    });
+
+    $("#imagesLink").on("click", () => {
+        $('section').hide();
+        $imagesSection.show("fold");
     });
     
     $("#colorsLink").on("click", () => {
