@@ -25,13 +25,23 @@ figure {
     text-align: center;
 }
 
+hr {
+    border: 0.01em solid #505050;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 6px;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: #CF9FFF;
 }
 
 a:hover {
-    font-weight: 1000;    
+    font-weight: 1000;
 }
 
 a:active {
@@ -51,15 +61,7 @@ a:active {
 .portrait {
     max-height: 95vh;
 }
+
 .landscape {
     max-height: 95vh;
-}
-hr {
-    border: 0.01em solid #505050;
-}
-
-button {
-    width: 120px;
-    height: 30px;
-    margin-bottom: 6px;
 }
