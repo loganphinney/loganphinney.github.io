@@ -35,6 +35,10 @@ button {
     margin-bottom: 6px;
 }
 
+iframe {
+    height: 800px;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: #CF9FFF;
@@ -65,6 +69,7 @@ a:active {
 .landscape {
     max-height: 95vh;
 }
+
 @media only screen and (max-width: 800px) {
     header nav {
         flex-direction: column;
@@ -81,6 +86,9 @@ a:active {
         height: auto;
     }
 
+    iframe {
+        height: 600px;
+    }
     .portrait,
     .landscape {
         max-width: 100%;
