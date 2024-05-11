@@ -2,11 +2,33 @@
 $(document).ready(function () {
     //SET INITIAL SECTION VISIBILITY
     const $homeSection = $("#home");
-    const $resumeSection = $("#resume");    
+    const $resumeSection = $("#resume");
     const $imagesSection = $("#images-section");
     const $colorsSection = $("#hex-color-generator");
 
     $('section').hide();
+
+    //LINK HANDLING
+    if (window.location.href.endsWith("#home")) {
+        $('section').hide();
+        $homeSection.show("fold");
+    }
+
+    if (window.location.href.endsWith("#resume")) {
+        $('section').hide();
+        $resumeSection.show("fold");
+    }
+
+    if (window.location.href.endsWith("#images-section")) {
+        $('section').hide();
+        $imagesSection.show("fold");
+    }
+
+    if (window.location.href.endsWith("#hex-color-generator")) {
+        $('section').hide();
+        $colorsSection.show("fold");
+    }
+
     $homeSection.show();
 
     //NAV LINK ONCLICK FUNCTIONS
@@ -24,7 +46,7 @@ $(document).ready(function () {
         $('section').hide();
         $imagesSection.show("fold");
     });
-    
+
     $("#colorsLink").on("click", () => {
         $('section').hide();
         $colorsSection.show("fold");
