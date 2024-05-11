@@ -7,6 +7,7 @@ $(document).ready(function () {
     const $colorsSection = $("#hex-color-generator");
 
     $('section').hide();
+    $homeSection.show();
 
     //LINK HANDLING
     if (window.location.href.endsWith("#home")) {
@@ -28,8 +29,6 @@ $(document).ready(function () {
         $('section').hide();
         $colorsSection.show("fold");
     }
-
-    $homeSection.show();
 
     //NAV LINK ONCLICK FUNCTIONS
     $("#homeLink").on("click", () => {
