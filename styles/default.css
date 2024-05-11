@@ -65,3 +65,20 @@ a:active {
 .landscape {
     max-height: 95vh;
 }
+@media only screen and (max-width: 800px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .portrait,
+    .landscape {
+        max-width: 100%;
+        height: auto;
+    }
+}
