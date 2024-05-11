@@ -73,7 +73,12 @@ a:active {
 
     header nav a {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
     }
 
     .portrait,
