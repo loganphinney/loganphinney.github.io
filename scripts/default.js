@@ -3,7 +3,7 @@ $(document).ready(function () {
     //SET INITIAL SECTION VISIBILITY
     const $homeSection = $("#home");
     const $resumeSection = $("#resume");
-    const $imagesSection = $("#images-section");
+    const $imagesSection = $("#images");
     const $colorsSection = $("#hex-color-generator");
 
     $('section').hide();
@@ -20,7 +20,7 @@ $(document).ready(function () {
         $resumeSection.show("fold");
     }
 
-    if (window.location.href.endsWith("#images-section")) {
+    if (window.location.href.endsWith("#images")) {
         $('section').hide();
         $imagesSection.show("fold");
     }
