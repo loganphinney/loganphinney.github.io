@@ -1678,4 +1678,5 @@ figure {
 
 figure img {
 	max-height: 98vh;
+	max-width: 98vw;
 }
