@@ -57,33 +57,10 @@ function generateRandomHexColor() {
     let hexColor = randomColor.toString(16).padStart(6, '0');
     return '#' + hexColor;
 }
-function changeColor1() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame1").css("background-color", randomColor);
-    $("#colorLabel1").text(randomColor);
-}
-function changeColor2() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame2").css("background-color", randomColor);
-    $("#colorLabel2").text(randomColor);
-}
-function changeColor3() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame3").css("background-color", randomColor);
-    $("#colorLabel3").text(randomColor);
-}
-function changeColor4() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame4").css("background-color", randomColor);
-    $("#colorLabel4").text(randomColor);
-}
-function changeColor5() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame5").css("background-color", randomColor);
-    $("#colorLabel5").text(randomColor);
-}
-function changeColor6() {
-    randomColor = generateRandomHexColor().toUpperCase();
-    $("#colorFrame6").css("background-color", randomColor);
-    $("#colorLabel6").text(randomColor);
+function changeColor(element) {
+    let randomColor = generateRandomHexColor().toUpperCase();
+    let frameId = "#colorFrame" + element.dataset.index;  // Use data-index to get the number
+    let labelId = "#colorLabel" + element.dataset.index;  // Same for the label
+    $(frameId).css("background-color", randomColor);
+    $(labelId).text(randomColor);
 }
