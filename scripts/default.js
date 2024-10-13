@@ -59,8 +59,8 @@ function generateRandomHexColor() {
 }
 function changeColor(element) {
     let randomColor = generateRandomHexColor().toUpperCase();
-    let frameId = "#colorFrame" + element.dataset.index;  // Use data-index to get the number
-    let labelId = "#colorLabel" + element.dataset.index;  // Same for the label
+    let frameId = "#colorFrame" + element.dataset.index;
+    let labelId = "#colorLabel" + element.dataset.index;
     $(frameId).css("background-color", randomColor);
     $(labelId).text(randomColor);
 }
