@@ -1,126 +1,116 @@
-<!DOCTYPE html>
+<!--Dimension by HTML5 UP	html5up.net | @ajlkn	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan's GitHub Site</title>
-    <link rel="stylesheet" href="./styles/default.css">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-    <script src="./scripts/lazysizes.min.js" async=""></script>
+	<title>Logan's GitHub Site</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 </head>
-<body>
-    <header>
-        <h1 style="font-family: Lato, sans-serif;">Logan Phinney</h1>
-        <hr>
-        <nav>
-            <a href="#home" id="homeLink">Home</a>
-            <a href="#resume" id="resumeLink">R&eacute;sum&eacute;</a>
-            <a href="#images" id="imagesLink">Images</a>
-            <a href="#hex-color-generator" id="colorsLink">Color Generator</a>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to my personal website!</p>
-        </section>
-        <section id="resume">
-            <h2>R&eacute;sum&eacute;</h2>
-            <iframe src="./images/LoganPhinney_Resume.pdf" title="Resume PDF" width="100%" loading="lazy"></iframe>            
-        </section>
-        <section id="images">
-            <h2>Images</h2>
-            <p>A random collection of images shot by myself.</p>
-            <p>Automatic image loading and resizing script by "aFarkas" <a href="https://github.com/aFarkas/lazysizes">lazySizes</a></p>
-            <h3 style="text-align: center;">Ricoh GR IIIx</h3>
-            <figure>
-                <img src="./images/dry_cleaners_small.jpeg" data-src="./images/dry_cleaners.jpeg" alt="Dry Cleaners" class="landscape lazyload">
-            </figure>
-            <figure>
-                <img src="./images/camp_north_end_small.jpeg" data-src="./images/camp_north_end.jpeg" alt="Camp North End" class="portrait lazyload">
-            </figure>
-            <figure>
-                <img src="./images/red_bridge_small.jpeg" data-src="./images/red_bridge.jpeg" alt="Red Bridge" class="portrait lazyload">
-            </figure>
-            <figure>
-                <img src="./images/red_flower_small.jpeg" data-src="./images/red_flower.jpeg" alt="Red Flower" class="portrait lazyload">
-            </figure>
-            <figure>
-                <img src="./images/purple_flowers1_small.jpeg" data-src="./images/purple_flowers1.jpeg" alt="Purple Flowers" class="landscape lazyload">
-            </figure>
-            <figure>
-                <img src="./images/stone_small.jpeg" data-src="./images/stone.jpeg" alt="stone" class="portrait lazyload">
-            </figure>
-            <figure>
-                <img src="./images/spider_small.jpeg" data-src="./images/spider.jpeg" alt="Spider" class="portrait lazyload">
-            </figure>
-            <figure>
-                <img src="./images/bird_statue_small.jpeg" data-src="./images/bird_statue.jpeg" alt="Bird Statue" class="portrait lazyload">
-            </figure>
-            <h3 style="text-align: center;">Nikon Coolpix S9900</h3>
-            <figure>
-                <img src="./images/heron_small.jpeg" data-src="./images/heron.jpeg" alt="Blue Heron" class="portrait lazyload">
-                <figcaption>Blue Heron</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/scarlet_macaw_small.jpeg" data-src="./images/scarlet_macaw.jpeg" alt="Scarlet Macaw" class="landscape lazyload">
-                <figcaption>Scarlet Macaw</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/collared_aracari_small.jpeg" data-src="./images/collared_aracari.jpeg" alt="Collared Aracari" class="portrait lazyload">
-                <figcaption>Collared Aracaris</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/moon_small.jpeg" data-src="./images/moon.jpeg" alt="The Moon" class="portrait lazyload">
-            </figure>
-            <h3 style="text-align: center;">iPhone</h3>
-            <figure>
-                <img src="./images/quetzal_small.jpeg" data-src="./images/quetzal.jpeg" alt="Quetzal" class="portrait lazyload">
-                <figcaption>Quetzal</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/space_small.jpeg" data-src="./images/space.jpeg" alt="Space" class="landscape lazyload">
-            </figure>
-            <figure>
-                <img src="./images/Sayde_small.jpeg" data-src="./images/Sayde.jpeg" alt="Vizsla Dog" class="landscape lazyload">
-                <figcaption>'Sayde Mae'</figcaption>
-            </figure>
-        </section>
-        <section id="hex-color-generator">
-            <h2>Color Generator</h2>
-            <p>Very simple hex code palette generator.<br>Built with javascript for personal use.</p>
-            <button type="button" data-index="1" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel1" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame1"></div>
-            <button type="button" data-index="2" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel2" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame2"></div>
-            <button type="button" data-index="3" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel3" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame3"></div>
-            <button type="button" data-index="4" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel4" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame4"></div>
-            <button type="button" data-index="5" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel5" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame5"></div>
-            <button type="button" data-index="6" onclick="changeColor(this)">New Color</button>
-            <p id="colorLabel6" style="display: inline;"></p>
-            <div class="colorFrame" id="colorFrame6"></div>
-        </section>
-    </main>
-    <footer>
-        <hr>
-        <a href="https://github.com/loganphinney" target="_blank">GitHub</a>
-        <p style="margin-top: 3px;">Contact<br>logan.phinney10@gmail.com</p>
-        <hr>
-    </footer>
-    <script src="./scripts/default.js"></script>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-file-code"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Logan Phinney</h1>
+					<h3>Welcome to my personal website!</h3>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#resume">R&eacute;sum&eacute;</a></li>
+					<li><a href="#gallery">Image Gallery</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Main -->
+		<div id="main">
+			<!-- Resume -->
+			<article id="resume" style="height: 100vh;">
+				<h2 class="major">R&eacute;sum&eacute;</h2>
+				<iframe src="./assets/LoganPhinney_Resume.pdf" title="Resume PDF" loading="lazy" width="100%" height="90%"></iframe>
+			</article>
+			<!-- Images -->
+			<article id="gallery" style="width: 100vw;">
+				<h2 class="major">Image Gallery</h2>
+				<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+				<blockquote>Automatic image loading and resizing script by "aFarkas" <a href="https://github.com/aFarkas/lazysizes">lazySizes</a></blockquote>
+				<h3 style="text-align: center;">Ricoh GR IIIx</h3>
+				<figure>
+					<img src="./images/dry_cleaners_small.jpeg" data-src="./images/dry_cleaners.jpeg" alt="Dry Cleaners" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/camp_north_end_small.jpeg" data-src="./images/camp_north_end.jpeg" alt="Camp North End" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/red_bridge_small.jpeg" data-src="./images/red_bridge.jpeg" alt="Red Bridge" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/red_flower_small.jpeg" data-src="./images/red_flower.jpeg" alt="Red Flower" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/purple_flowers1_small.jpeg" data-src="./images/purple_flowers1.jpeg" alt="Purple Flowers" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/stone_small.jpeg" data-src="./images/stone.jpeg" alt="stone" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/spider_small.jpeg" data-src="./images/spider.jpeg" alt="Spider" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/bird_statue_small.jpeg" data-src="./images/bird_statue.jpeg" alt="Bird Statue" class=" lazyload">
+				</figure>
+				<h3 style="text-align: center;">Nikon Coolpix S9900</h3>
+				<figure>
+					<img src="./images/heron_small.jpeg" data-src="./images/heron.jpeg" alt="Blue Heron" class=" lazyload">
+					<figcaption>Blue Heron</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/scarlet_macaw_small.jpeg" data-src="./images/scarlet_macaw.jpeg" alt="Scarlet Macaw" class=" lazyload">
+					<figcaption>Scarlet Macaw</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/collared_aracari_small.jpeg" data-src="./images/collared_aracari.jpeg" alt="Collared Aracari" class=" lazyload">
+					<figcaption>Collared Aracaris</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/moon_small.jpeg" data-src="./images/moon.jpeg" alt="The Moon" class=" lazyload">
+				</figure>
+				<h3 style="text-align: center;">iPhone</h3>
+				<figure>
+					<img src="./images/quetzal_small.jpeg" data-src="./images/quetzal.jpeg" alt="Quetzal" class=" lazyload">
+					<figcaption>Quetzal</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/space_small.jpeg" data-src="./images/space.jpeg" alt="Space" class=" lazyload">
+				</figure>
+				<figure>
+					<img src="./images/Sayde_small.jpeg" data-src="./images/Sayde.jpeg" alt="Vizsla Dog" class=" lazyload">
+					<figcaption>'Sayde Mae'</figcaption>
+				</figure>
+			</article>
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<a href="https://github.com/loganphinney" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a>
+		</footer>
+	</div>
+	<!-- BG -->
+	<div id="bg"></div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/lazysizes.min.js" async=""></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
