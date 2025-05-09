@@ -67,7 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 800px;
+    box-sizing: border-box;
     margin: auto;
     flex: 1;
 }
@@ -368,39 +368,4 @@ body {
     height: 100%;
     z-index: -1;
     background: radial-gradient(circle at center, var(--base) 30%, var(--surface) 100%);
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #header {
-        padding: 1.5em 1em;
-    }
-
-    #header h1 {
-        font-size: 2em;
-    }
-
-    .nav-button {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    #resume article {
-        width: 90%;
-    }
-
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .back-button {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .image-grid {
-        gap: 1.5rem;
-    }
 }
