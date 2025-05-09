@@ -7,6 +7,60 @@ interface GalleryPageProps {
 
 const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const imageData = [
+        {
+            camera: 'Ricoh GR IIIx',
+            path: 'ricoh',
+            images: [
+                { file: 'springtime.JPG', alt: 'Spring Time' },
+                { file: 'curves.JPG', alt: 'Curvy Architecture' },
+                { file: 'isolated.JPG', alt: 'Sunset Streetlamp' },
+                { file: 'nuclear.JPG', alt: 'Nuclear Power Plant' },
+                { file: 'coolerthanyou.JPG', alt: 'Street photography' },
+                { file: 'youknowthevibe.jpg', alt: 'You know the vibe' },
+                { file: 'greenhouse.JPG', alt: 'Greenhouse' },
+                { file: 'bessie_cropped.JPG', alt: 'Bessie' },
+                { file: 'appalachians1.JPG', alt: 'Appalachian Mountains' },
+                { file: 'camp-north-end.jpg', alt: 'Camp North End' },
+                { file: 'dry_cleaners.jpeg', alt: 'Dry Cleaners' },
+                { file: 'red_bridge.jpeg', alt: 'Red Bridge' },
+                { file: 'red_flower.jpeg', alt: 'Red Flower' },
+                { file: 'pink-butterfly.JPG', alt: 'Pink Flowers and Butterfly' },
+                { file: 'greenandpurple.JPG', alt: 'Green and Purple Plants' },
+                { file: 'bird_statue.jpeg', alt: 'Bird Statue' },
+                { file: 'porsche.JPG', alt: 'Porsche 356' },
+            ],
+        },
+        {
+            camera: 'Pentax Super Program',
+            subtitle: 'SMC-A 50mm f1.4',
+            path: 'pentax',
+            images: [
+                { file: 'snowycar.jpg', alt: 'Snowy Car' },
+                { file: 'powerline.jpg', alt: 'Powerline' },
+                { file: 'stormysky.jpg', alt: 'Stormy Sky' },
+            ],
+        },
+        {
+            camera: 'Nikon Coolpix S9900',
+            path: 'nikon',
+            images: [
+                { file: 'heron.jpeg', alt: 'Blue Heron' },
+                { file: 'scarlet_macaw.jpeg', alt: 'Scarlet Macaw' },
+                { file: 'collared_aracari.jpeg', alt: 'Collared Aracari' },
+                { file: 'moon.jpeg', alt: 'The Moon' },
+            ],
+        },
+        {
+            camera: 'iPhone',
+            path: 'iphone',
+            images: [
+                { file: 'quetzal.jpeg', alt: 'Quetzal' },
+                { file: 'Sayde.jpeg', alt: 'Vizsla Dog' },
+                { file: 'space.jpeg', alt: 'Space' },
+            ],
+        },
+    ];
 
     return (
         <div id="wrapper">
@@ -71,16 +125,18 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                         <img src="/images/porsche.JPG" alt="Porsche 356" loading="lazy" onClick={() => setSelectedImage('/images/porsche.JPG')} />
                     </figure>
                 </div>
-                <h3 className="camera-title">Pentax Super Program - <em style={{ fontSize: '0.8em' }}>SMC-A 50mm f1.4</em></h3>
+                <h3 className="camera-title">
+                    Pentax Super Program - <em style={{ fontSize: '0.8em' }}>SMC-A 50mm f1.4</em>
+                </h3>
                 <div className="image-grid">
                     <figure>
-                        <img src="/images/snowycar.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/snowycar.jpg')} />
+                        <img src="/images/snowycar.jpg" alt="Snowy Car" loading="lazy" onClick={() => setSelectedImage('/images/snowycar.jpg')} />
                     </figure>
                     <figure>
-                        <img src="/images/powerline.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/powerline.jpg')} />
+                        <img src="/images/powerline.jpg" alt="Powerline" loading="lazy" onClick={() => setSelectedImage('/images/powerline.jpg')} />
                     </figure>
                     <figure>
-                        <img src="/images/stormysky.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/stormysky.jpg')} />
+                        <img src="/images/stormysky.jpg" alt="Stormy Sky" loading="lazy" onClick={() => setSelectedImage('/images/stormysky.jpg')} />
                     </figure>
                 </div>
                 <h3 className="camera-title">Nikon Coolpix S9900</h3>
@@ -110,6 +166,21 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                         <img src="/images/space.jpeg" alt="Space" loading="lazy" onClick={() => setSelectedImage('/images/space.jpeg')} />
                     </figure>
                 </div>
+                {imageData.map(({ camera, subtitle, path, images }) => (
+                    <div key={camera}>
+                        <h3 className="camera-title">
+                            {camera}
+                            {subtitle && <em style={{ fontSize: '0.8em' }}> - {subtitle}</em>}
+                        </h3>
+                        <div className="image-grid">
+                            {images.map(({ file, alt }) => (
+                                <figure key={file}>
+                                    <img src={`/images/${path}/${file}`} alt={alt} loading="lazy" onClick={() => setSelectedImage(`/images/${path}/${file}`)} />
+                                </figure>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </article>
             {selectedImage && (
                 <div className="image-modal" onClick={() => setSelectedImage(null)}>
