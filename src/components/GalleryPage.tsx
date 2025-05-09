@@ -71,10 +71,10 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                         <img src="/images/quetzal.jpeg" alt="Quetzal" loading="lazy" onClick={() => setSelectedImage('/images/quetzal.jpeg')} />
                     </figure>
                     <figure>
-                        <img src="/images/space.jpeg" alt="Space" loading="lazy" onClick={() => setSelectedImage('/images/space.jpeg')} />
+                        <img src="/images/Sayde.jpeg" alt="Vizsla Dog" loading="lazy" onClick={() => setSelectedImage('/images/Sayde.jpeg')} />
                     </figure>
                     <figure>
-                        <img src="/images/Sayde.jpeg" alt="Vizsla Dog" loading="lazy" onClick={() => setSelectedImage('/images/Sayde.jpeg')} />
+                        <img src="/images/space.jpeg" alt="Space" loading="lazy" onClick={() => setSelectedImage('/images/space.jpeg')} />
                     </figure>
                 </div>
             </article>
