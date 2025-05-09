@@ -38,6 +38,9 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                         <img src="/images/youknowthevibe.jpg" alt="You know the vibe" loading="lazy" onClick={() => setSelectedImage('/images/youknowthevibe.jpg')} />
                     </figure>
                     <figure>
+                        <img src="/images/greenhouse.JPG" alt="Greenhouse" loading="lazy" onClick={() => setSelectedImage('/images/greenhouse.JPG')} />
+                    </figure>
+                    <figure>
                         <img src="/images/bessie_cropped.JPG" alt="Bessie" loading="lazy" onClick={() => setSelectedImage('/images/bessie_cropped.JPG')} />
                     </figure>
                     <figure>
@@ -66,6 +69,18 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                     </figure>
                     <figure>
                         <img src="/images/porsche.JPG" alt="Porsche 356" loading="lazy" onClick={() => setSelectedImage('/images/porsche.JPG')} />
+                    </figure>
+                </div>
+                <h3 className="camera-title">Pentax Super Program - <em style={{ fontSize: '0.8em' }}>SMC-A 50mm f1.4</em></h3>
+                <div className="image-grid">
+                    <figure>
+                        <img src="/images/snowycar.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/snowycar.jpg')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/powerline.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/powerline.jpg')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/stormysky.jpg" alt="" loading="lazy" onClick={() => setSelectedImage('/images/stormysky.jpg')} />
                     </figure>
                 </div>
                 <h3 className="camera-title">Nikon Coolpix S9900</h3>
