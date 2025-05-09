@@ -14,7 +14,7 @@ const ResumePage: FC<ResumePageProps> = ({ navigate }) => {
                         Back to Home
                     </button>
                 </div>
-                <iframe src="/assets/LoganPhinney_Resume.pdf" title="Resume PDF" loading="lazy" width="100%" height="90%"></iframe>
+                <iframe src="/docs/LoganPhinney_Resume.pdf" title="Resume PDF" loading="lazy" width="100%" height="90%"></iframe>
             </article>
         </div>
     );
