@@ -20,16 +20,34 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                 <h3 className="camera-title">Ricoh GR IIIx</h3>
                 <div className="image-grid">
                     <figure>
+                        <img src="/images/springtime.JPG" alt="Spring Time" loading="lazy" onClick={() => setSelectedImage('/images/springtime.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/curves.JPG" alt="Curvy Architecture" loading="lazy" onClick={() => setSelectedImage('/images/curves.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/isolated.JPG" alt="Sunset Streetlamp" loading="lazy" onClick={() => setSelectedImage('/images/isolated.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/nuclear.JPG" alt="Nuclear Power Plant" loading="lazy" onClick={() => setSelectedImage('/images/nuclear.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/coolerthanyou.JPG" alt="Street photography" loading="lazy" onClick={() => setSelectedImage('/images/coolerthanyou.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/youknowthevibe.jpg" alt="You know the vibe" loading="lazy" onClick={() => setSelectedImage('/images/youknowthevibe.jpg')} />
+                    </figure>
+                    <figure>
                         <img src="/images/bessie_cropped.JPG" alt="Bessie" loading="lazy" onClick={() => setSelectedImage('/images/bessie_cropped.JPG')} />
+                    </figure>
+                    <figure>
+                        <img src="/images/appalachians1.JPG" alt="Appalachian Mountains" loading="lazy" onClick={() => setSelectedImage('/images/appalachians1.JPG')} />
                     </figure>
                     <figure>
                         <img src="/images/camp-north-end.jpg" alt="Camp North End" loading="lazy" onClick={() => setSelectedImage('/images/camp-north-end.jpg')} />
                     </figure>
                     <figure>
                         <img src="/images/dry_cleaners.jpeg" alt="Dry Cleaners" loading="lazy" onClick={() => setSelectedImage('/images/dry_cleaners.jpeg')} />
-                    </figure>
-                    <figure>
-                        <img src="/images/appalachians1.JPG" alt="Appalachian Mountains" loading="lazy" onClick={() => setSelectedImage('/images/appalachians1.JPG')} />
                     </figure>
                     <figure>
                         <img src="/images/red_bridge.jpeg" alt="Red Bridge" loading="lazy" onClick={() => setSelectedImage('/images/red_bridge.jpeg')} />
