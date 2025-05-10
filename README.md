@@ -1,1 +1,1 @@
-## Simple Personal Site built With React + TypeScript + Vite
+## Simple Personal Site built With TypeScript + React + Vite
