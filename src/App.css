@@ -313,11 +313,16 @@ body {
 
 .camera-title {
     text-align: center;
-    color: var(--text);
+    color: var(--rose);
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     position: relative;
     padding-bottom: 0.5rem;
+}
+
+.camera-title em {
+    font-size: 0.8em;
+    color: var(--pine)
 }
 
 .camera-title::after {

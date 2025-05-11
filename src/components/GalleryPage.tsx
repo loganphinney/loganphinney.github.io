@@ -75,7 +75,7 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                     <div key={camera}>
                         <h3 className="camera-title">
                             {camera}
-                            {subtitle && <em style={{ fontSize: '0.8em' }}> - {subtitle}</em>}
+                            {subtitle && <em> - {subtitle}</em>}
                         </h3>
                         <div className="image-grid">
                             {images.map(({ file, alt }) => (
