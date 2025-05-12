@@ -145,10 +145,21 @@ body {
     width: 100%;
 }
 
-/* Navigation buttons - vertical stack */
+/* Remove default nav button styles */
+.nav-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Buttons*/
 button {
     font-family: 'Ubuntu';
     color: var(--base);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
 }
 
 button:hover {
@@ -171,42 +182,38 @@ button:hover {
 
 .nav-button {
     background-color: var(--foam);
-    border: none;
     padding: 0.8em 1.5em;
-    border-radius: 8px;
     font-size: 1.1em;
-    cursor: pointer;
-    transition: all 0.2s;
     width: 200px;
-    max-width: 100%;
-    text-align: center;
 }
 
 .nav-button:hover {
     background-color: var(--iris);
 }
 
-/* Remove default button styles */
-.nav-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
 .back-button {
     background-color: var(--iris);
-    font-family: 'Ubuntu';
-    border: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s;
     font-size: 1rem;
     margin-left: auto;
 }
 
 .back-button:hover {
     background-color: var(--love);
+}
+
+.download-button {
+    background-color: var(--pine);
+    color: var(--text);
+    padding: 0.8em 0;
+    margin: 2em;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 180px;
+}
+.download-button:hover {
+    background-color: var(--foam);
+    color: var(--base);
 }
 
 /* Footer styles - transparent and fixed to bottom */
@@ -218,7 +225,7 @@ button:hover {
 }
 
 #footer a {
-    color: var(--iris);
+    color: var(--gold);
     transition: all 0.2s;
     align-items: center;
     justify-content: center;
@@ -229,7 +236,7 @@ button:hover {
 }
 
 #footer svg:hover {
-    color: var(--gold);
+    color: var(--iris);
     transform: scale(1.2);
 }
 
@@ -319,7 +326,7 @@ button:hover {
     transition: all 0.2s;
     object-fit: contain;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -341,7 +348,7 @@ button:hover {
 }
 
 .camera-title {
-    font-family: 'Hack Nerd Font';
+    font-family: 'HackBold';
     text-align: center;
     color: var(--rose);
     margin: 1rem;
