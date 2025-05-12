@@ -31,6 +31,7 @@
         local('Hack'),
         url('/fonts/HackNerdFont-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -39,6 +40,7 @@
         local('Ubuntu'),
         url('/fonts/UbuntuSansNerdFont-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -47,6 +49,7 @@
         local('HackBold'),
         url('/fonts/HackNerdFont-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
@@ -55,6 +58,7 @@
         local('UbuntuBold'),
         url('/fonts/UbuntuSansNerdFont-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: swap;
 }
 
 /* Base styles */
