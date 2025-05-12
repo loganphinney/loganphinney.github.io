@@ -25,6 +25,33 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Hack";
+  src: local("Hack"),
+    url("./public/fonts/HackNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"),
+    url("./public/fonts/UbuntuSansNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HackBold";
+  src: local("HackBold"),
+    url("./public/fonts/HackNerdFont-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "UbuntuBold";
+  src: local("UbuntuBold"),
+    url("./public/fonts/UbuntuSansNerdFont-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
 /* Base styles */
 body {
     margin: 0;
@@ -95,16 +122,15 @@ body {
 }
 
 #header h1 {
-    font-family: 'Hack Nerd Font';
+    font-family: 'HackBold';
     font-size: 2.5em;
-    font-weight: 999;
     margin: 0.5em 0;
     color: var(--rose);
     width: 100%;
 }
 
 #header h3 {
-    font-family: 'Hack Nerd Font';
+    font-family: 'HackBold';
     font-size: 1.2em;
     margin: 0;
     color: var(--subtle);
@@ -116,6 +142,19 @@ body {
 }
 
 /* Navigation buttons - vertical stack */
+button {
+    font-family: 'Ubuntu';
+    color: var(--base);
+}
+
+button:hover{
+    font-family: 'UbuntuBold';
+    font-weight: 600;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
 .nav-buttons {
     display: flex;
     flex-direction: column;
@@ -129,25 +168,19 @@ body {
 
 .nav-button {
     background-color: var(--foam);
-    color: var(--base);
-    font-weight: 700;
     border: none;
     padding: 0.8em 1.5em;
     border-radius: 8px;
     font-size: 1.1em;
     cursor: pointer;
     transition: all 0.2s;
-    font-family: inherit;
     width: 200px;
     max-width: 100%;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-button:hover {
-    background-color: var(--iris);
-    transform: scale(1.03);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--iris); 
 }
 
 /* Remove default button styles */
@@ -159,21 +192,18 @@ body {
 
 .back-button {
     background-color: var(--iris);
-    color: var(--base);
-    font-weight: 700;
+    font-family: 'Ubuntu';
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: auto;
 }
 
 .back-button:hover {
-    background-color: var(--love);
-    transform: scale(1.03);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--love); 
 }
 
 /* Footer styles - transparent and fixed to bottom */
@@ -197,7 +227,7 @@ body {
 
 #footer svg:hover {
     color: var(--gold);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Full-width page styles */
@@ -222,8 +252,7 @@ body {
 }
 
 .section-header h2 {
-    font-family: 'Hack Nerd Font';
-    font-weight: 900;
+    font-family: 'HackBold';
     margin: 0;
     text-align: left;
     flex-grow: 1;
@@ -292,7 +321,7 @@ body {
 }
 
 .image-grid img:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .image-grid figcaption {
