@@ -360,7 +360,7 @@ button:hover {
     display: block;
     width: 100px;
     height: 2px;
-    background: var(--iris);
+    background: var(--gold);
     margin: 0.5rem auto 0;
 }
 
