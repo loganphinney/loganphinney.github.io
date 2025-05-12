@@ -12,9 +12,9 @@ function App() {
 
     useEffect(() => {
         const path = location.pathname;
-        if (path === '/resume') {
+        if (path.includes('resume')) {
             setCurrentPage('resume');
-        } else if (path === '/gallery') {
+        } else if (path.includes('gallery')) {
             setCurrentPage('gallery');
         } else {
             setCurrentPage('main');
