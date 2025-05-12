@@ -26,31 +26,35 @@
 }
 
 @font-face {
-  font-family: "Hack";
-  src: local("Hack"),
-    url("./public/fonts/HackNerdFont-Regular.ttf") format("truetype");
-  font-weight: normal;
+    font-family: 'Hack';
+    src:
+        local('Hack'),
+        url('./public/fonts/HackNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: local("Ubuntu"),
-    url("./public/fonts/UbuntuSansNerdFont-Regular.ttf") format("truetype");
-  font-weight: normal;
+    font-family: 'Ubuntu';
+    src:
+        local('Ubuntu'),
+        url('./public/fonts/UbuntuSansNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: "HackBold";
-  src: local("HackBold"),
-    url("./public/fonts/HackNerdFont-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: 'HackBold';
+    src:
+        local('HackBold'),
+        url('./public/fonts/HackNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: "UbuntuBold";
-  src: local("UbuntuBold"),
-    url("./public/fonts/UbuntuSansNerdFont-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: 'UbuntuBold';
+    src:
+        local('UbuntuBold'),
+        url('./public/fonts/UbuntuSansNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 /* Base styles */
 body {
@@ -147,12 +151,11 @@ button {
     color: var(--base);
 }
 
-button:hover{
+button:hover {
     font-family: 'UbuntuBold';
     font-weight: 600;
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .nav-buttons {
@@ -180,7 +183,7 @@ button:hover{
 }
 
 .nav-button:hover {
-    background-color: var(--iris); 
+    background-color: var(--iris);
 }
 
 /* Remove default button styles */
@@ -203,7 +206,7 @@ button:hover{
 }
 
 .back-button:hover {
-    background-color: var(--love); 
+    background-color: var(--love);
 }
 
 /* Footer styles - transparent and fixed to bottom */
