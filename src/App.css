@@ -16,7 +16,7 @@
     --highlight-med: #403d52;
     --highlight-high: #524f67;
 
-    font-family: sans-serif, monospace;
+    font-family: sans-serif;
     line-height: 1.5;
     font-weight: 400;
     font-synthesis: none;
@@ -69,6 +69,7 @@ body {
     min-height: 100vh;
     background-color: var(--base);
     color: var(--text);
+    font-family: sans-serif;
 }
 
 #root {
@@ -131,7 +132,7 @@ body {
 }
 
 #header h1 {
-    font-family: 'HackBold';
+    font-family: 'HackBold', sans-serif;
     font-size: 2.5em;
     margin: 0.5em 0;
     color: var(--rose);
@@ -139,7 +140,7 @@ body {
 }
 
 #header h3 {
-    font-family: 'HackBold';
+    font-family: 'HackBold', sans-serif;
     font-size: 1.2em;
     margin: 0;
     color: var(--subtle);
@@ -159,7 +160,7 @@ body {
 
 /* Buttons*/
 button {
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     color: var(--base);
     border: none;
     cursor: pointer;
@@ -168,7 +169,7 @@ button {
 }
 
 button:hover {
-    font-family: 'UbuntuBold';
+    font-family: 'UbuntuBold', sans-serif;
     font-weight: 600;
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -268,7 +269,7 @@ button:hover {
 }
 
 .section-header h2 {
-    font-family: 'HackBold';
+    font-family: 'HackBold', sans-serif;
     margin: 0;
     text-align: left;
     flex-grow: 1;
@@ -354,7 +355,7 @@ button:hover {
 }
 
 .camera-title {
-    font-family: 'HackBold';
+    font-family: 'HackBold', sans-serif;
     text-align: center;
     color: var(--rose);
     margin: 1rem;
