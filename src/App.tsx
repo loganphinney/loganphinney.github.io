@@ -33,6 +33,7 @@ function App() {
 
     return (
         <div className="App">
+            <link rel="icon" type="image/png" href="../images/favicon.png" />
             {currentPage === 'main' && <MainPage navigate={setCurrentPage} />}
             {currentPage === 'resume' && <ResumePage navigate={setCurrentPage} />}
             {currentPage === 'gallery' && <GalleryPage navigate={setCurrentPage} />}
