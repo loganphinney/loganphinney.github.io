@@ -19,6 +19,7 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                 { file: 'coolerthanyou.JPG', alt: 'Street photography' },
                 { file: 'youknowthevibe.jpg', alt: 'You know the vibe' },
                 { file: 'greenhouse.JPG', alt: 'Greenhouse' },
+                { file: 'ant.jpeg', alt: 'Tiny ant' },
                 { file: 'bessie_cropped.JPG', alt: 'Bessie' },
                 { file: 'appalachians1.JPG', alt: 'Appalachian Mountains' },
                 { file: 'camp-north-end.jpg', alt: 'Camp North End' },
