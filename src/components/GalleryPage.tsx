@@ -67,7 +67,7 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
         <div id="wrapper">
             <article id="gallery">
                 <div className="section-header">
-                    <h2 className="major">Image Gallery</h2>
+                    <h2 className="major">Gallery</h2>
                     <button onClick={() => navigate('main')} className="back-button">
                         Back to Home
                     </button>
