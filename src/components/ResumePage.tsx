@@ -15,7 +15,7 @@ const ResumePage: FC<ResumePageProps> = ({ navigate }) => {
                     </button>
                 </div>
                 <h3 style={{ margin: 'auto' }}>
-                    Not Available At This Time.<br></br>Sorry!
+                    Not Available At This Time.
                 </h3>
                 {/*<iframe src="/docs/LoganPhinney_Resume.pdf" title="Resume PDF" loading="lazy" width="100%" height="90%"></iframe>
                 <a href="/docs/LoganPhinney_Resume.pdf" download="LoganPhinney-Resume" target="_blank">

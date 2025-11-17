@@ -9,17 +9,30 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const imageData = [
         {
+            camera: 'Sony A7III',
+            path: 'sony',
+            images: [
+                { file: 'powerline.jpeg', alt: 'Powerline' },
+                { file: 'pipes.jpeg', alt: 'Pipes' },
+            ],
+        },
+        {
             camera: 'Ricoh GR IIIx',
             path: 'ricoh',
             images: [
+                { file: 'appalachians2.jpeg', alt: 'Overgrown Trail' },
+                { file: 'whitewater.jpeg', alt: 'Whitewater Center' },
+                { file: 'powerlines.jpeg', alt: 'Powerlines' },
                 { file: 'springtime.JPG', alt: 'Spring Time' },
+                { file: 'blackmountain.jpeg', alt: 'Black Mountain, NC' },
+                { file: 'citybar.jpeg', alt: 'Uptown' },
+                { file: 'cozy.jpeg', alt: 'Home' },
                 { file: 'curves.JPG', alt: 'Curvy Architecture' },
                 { file: 'isolated.JPG', alt: 'Sunset Streetlamp' },
                 { file: 'nuclear.JPG', alt: 'Nuclear Power Plant' },
                 { file: 'coolerthanyou.JPG', alt: 'Street photography' },
                 { file: 'youknowthevibe.jpg', alt: 'You know the vibe' },
                 { file: 'greenhouse.JPG', alt: 'Greenhouse' },
-                { file: 'ant.jpeg', alt: 'Tiny ant' },
                 { file: 'bessie_cropped.JPG', alt: 'Bessie' },
                 { file: 'appalachians1.JPG', alt: 'Appalachian Mountains' },
                 { file: 'camp-north-end.jpg', alt: 'Camp North End' },
@@ -28,7 +41,6 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
                 { file: 'red_flower.jpeg', alt: 'Red Flower' },
                 { file: 'pink-butterfly.JPG', alt: 'Pink Flowers and Butterfly' },
                 { file: 'greenandpurple.JPG', alt: 'Green and Purple Plants' },
-                { file: 'bird_statue.jpeg', alt: 'Bird Statue' },
                 { file: 'porsche.JPG', alt: 'Porsche 356' },
             ],
         },
@@ -37,6 +49,8 @@ const GalleryPage: FC<GalleryPageProps> = ({ navigate }) => {
             subtitle: 'SMC-A 50mm f1.4',
             path: 'pentax',
             images: [
+                { file: 'flower.jpeg', alt: 'Flower' },
+                { file: 'plane.jpeg', alt: 'Plane' },
                 { file: 'snowycar.jpg', alt: 'Snowy Car' },
                 { file: 'powerline.jpg', alt: 'Powerline' },
                 { file: 'stormysky.jpg', alt: 'Stormy Sky' },
