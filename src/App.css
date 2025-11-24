@@ -26,37 +26,10 @@
 }
 
 @font-face {
-    font-family: 'Hack';
-    src:
-        local('Hack'),
-        url('/fonts/HackNerdFont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src:
-        local('Ubuntu'),
-        url('/fonts/UbuntuSansNerdFont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'HackBold';
     src:
         local('HackBold'),
         url('/fonts/HackNerdFont-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'UbuntuBold';
-    src:
-        local('UbuntuBold'),
-        url('/fonts/UbuntuSansNerdFont-Bold.ttf') format('truetype');
     font-weight: bold;
     font-display: swap;
 }
@@ -160,7 +133,7 @@ body {
 
 /* Buttons*/
 button {
-    font-family: 'Ubuntu', sans-serif;
+    font-family:  sans-serif;
     color: var(--base);
     border: none;
     cursor: pointer;
@@ -169,8 +142,8 @@ button {
 }
 
 button:hover {
-    font-family: 'UbuntuBold', sans-serif;
-    font-weight: 600;
+    font-family: sans-serif;
+    font-weight: 550;
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
