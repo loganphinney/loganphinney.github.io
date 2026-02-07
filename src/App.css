@@ -133,7 +133,7 @@ body {
 
 /* Buttons*/
 button {
-    font-family:  sans-serif;
+    font-family: sans-serif;
     color: var(--base);
     border: none;
     cursor: pointer;
