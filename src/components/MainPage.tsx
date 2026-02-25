@@ -17,17 +17,17 @@ const MainPage: FC<MainPageProps> = ({ navigate }) => {
                 <div className="content">
                     <div className="inner">
                         <h1>Logan Phinney</h1>
-                        <h3>Welcome to my personal website!</h3>
+                        <h3>Welcome to my website!</h3>
                     </div>
                 </div>
                 <hr></hr>
                 <nav>
                     <ul className="nav-buttons">
-                        <li>
+                        {/*<li>
                             <button className="nav-button" onClick={() => navigate('resume')}>
                                 Résumé
                             </button>
-                        </li>
+                        </li>*/}
                         <li>
                             <button className="nav-button" onClick={() => navigate('gallery')}>
                                 Image Gallery
