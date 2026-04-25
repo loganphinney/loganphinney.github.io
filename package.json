@@ -1,8 +1,8 @@
 {
-    "name": "website-test",
+    "name": "personal-site",
     "private": true,
-    "version": "0.0.0",
-    "homepage": "https://loganphinney.github.io/",
+    "version": "1.0.0",
+    "homepage": "https://loganphinney.com/",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -22,20 +22,19 @@
         "react-router": "*"
     },
     "devDependencies": {
-        "@eslint/js": "*",
+        "@eslint/js": "^9.39.4",
         "@types/react": "*",
         "@types/react-dom": "*",
         "@vitejs/plugin-react": "*",
-        "eslint": "*",
-        "eslint-plugin-react-dom": "*",
-        "eslint-plugin-react-hooks": "*",
-        "eslint-plugin-react-refresh": "*",
-        "eslint-plugin-react-x": "*",
+        "eslint": "^9.39.4",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.1.1",
         "gh-pages": "*",
-        "globals": "*",
+        "globals": "^17.5.0",
+        "jiti": "^2.6.1",
         "prettier": "*",
         "typescript": "*",
-        "typescript-eslint": "*",
+        "typescript-eslint": "^8.59.0",
         "vite": "*"
     }
 }
