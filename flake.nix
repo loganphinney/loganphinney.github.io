@@ -1,8 +1,5 @@
 {
-  inputs = {
-    system.url = "path:/home/loganp/.dotfiles/nix/dsk";
-    nixpkgs.follows = "system/nixpkgs";
-  };
+  inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
   outputs =
     { nixpkgs, ... }:
     let
